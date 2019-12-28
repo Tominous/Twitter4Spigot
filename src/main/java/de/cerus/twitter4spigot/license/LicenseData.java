@@ -50,9 +50,9 @@ public class LicenseData {
         StringBuilder contentBuilder = new StringBuilder();
         BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
-/*            String s;
+            String s;
             while ((s = reader.readLine()) != null)
-                contentBuilder.append(s);*/
+                contentBuilder.append(s);
 
         JsonObject object = new JsonParser().parse(/*contentBuilder.toString()*/reader).getAsJsonObject();
         userName = object.get("name").getAsString();
