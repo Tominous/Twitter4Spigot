@@ -283,7 +283,7 @@ public class T4SCommand extends Command {
         return true;
     }
 
-/*    @Override
+    @Override
     public List<String> tabComplete(CommandSender sender, String alias, String[] args) throws IllegalArgumentException {
         List<String> list = new ArrayList<>();
         if(args.length == 0) {
@@ -314,5 +314,5 @@ public class T4SCommand extends Command {
             }
         }
         return list;
-    }*/
+    }
 }
