@@ -52,21 +52,21 @@ public class LoggerUtil {
     public static void disable() {
         java.util.logging.Logger logger = Logger.getLogger("org.apache.http.conn.util");
         logger.setLevel(Level.OFF);
-/*        logger.addHandler(new ConsoleHandler() {
+        logger.addHandler(new ConsoleHandler() {
             @Override
             public void publish(LogRecord record) {
                 log(record);
             }
-        });*/
+        });
 
         logger = Logger.getLogger("com.gargoylesoftware");
         logger.setLevel(Level.OFF);
-/*        logger.addHandler(new ConsoleHandler() {
+        logger.addHandler(new ConsoleHandler() {
             @Override
             public void publish(LogRecord record) {
                 log(record);
             }
-        });*/
+        });
     }
 
     private static void log(LogRecord record) {
